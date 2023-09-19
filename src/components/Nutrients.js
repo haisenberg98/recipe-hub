@@ -29,7 +29,7 @@ function Nutrients({ nutrientData }) {
 
   return (
     <div className='container mx-auto my-11'>
-      <div className='flex flex-col items-center px-10 max-w-4xl space-y-4'>
+      <div className='flex flex-col items-center px-10 md:max-w-4xl space-y-4'>
         <h2 className='text-xl font-semibold mb-4'>Nutritional Information</h2>
         <div className='grid grid-cols-2 md:grid-cols-4 gap-4'>
           {sortedNutrients.map(item => (

@@ -12,7 +12,7 @@ function InformationView({ instructionData, recipeData }) {
     <div className='container mx-auto my-11'>
       {instructions.map(instruction => {
         return (
-          <div className='flex flex-col px-10 mt-5 space-y-2 max-w-5xl'>
+          <div className='flex flex-col px-10 mt-5 space-y-2 md:max-w-4xl'>
             <h3>{instruction.name !== '' ? instruction.name : mealName}</h3>
             {/* check which step in instruction */}
             <ul className='list-inside space-y-4'>
