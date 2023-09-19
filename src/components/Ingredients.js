@@ -1,9 +1,15 @@
 import React from 'react';
 
 function Ingredients({ recipeData }) {
+  console.log(recipeData);
   if (!recipeData) {
     return <div>Data not available.</div>;
   }
+
+  const roundAmount = amount => {
+    if (amount <= 1) return 1;
+    return Math.round(amount);
+  };
 
   return (
     <div className='container mx-auto my-11'>
@@ -24,7 +30,9 @@ function Ingredients({ recipeData }) {
                 alt={ingredient.name}
                 className='object-contain w-10 h-10 rounded-md'
               />
-              <span>{`${ingredient.amount} ${ingredient.unit} of ${ingredient.name}`}</span>
+              <span>{`${roundAmount(ingredient.measures.metric.amount)} ${
+                ingredient.measures.metric.unitLong
+              } of ${ingredient.name}`}</span>
             </div>
           ))}
         </div>
