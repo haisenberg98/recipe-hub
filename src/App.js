@@ -50,8 +50,8 @@ function App() {
 
   // Main render logic
   return (
-    <div className='flex justify-center items-center min-h-screen bg-customBackground px-4'>
-      <div className='flex flex-col bg-customWhite mx-4 my-10 rounded-md '>
+    <div className='flex justify-center items-center w-full min-h-screen bg-customBackground'>
+      <div className='flex flex-col bg-customWhite mx-6 my-10 rounded-md '>
         <div className='flex'>
           {/* Tab buttons */}
           <button
