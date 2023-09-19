@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Nutrients({ nutrientData }) {
-  console.log(nutrientData.nutrients);
+  // console.log(nutrientData.nutrients);
 
   const roundAndFormatNutrients = nutrient => {
     // Round to 2 decimal places and convert to string
