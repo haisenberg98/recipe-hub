@@ -14,7 +14,7 @@ function App() {
   const [nutrientData, setNutrientData] = useState([]); // To store recipe data
   const [loading, setLoading] = useState(false); // To handle loading state
 
-  const apiKey = '40113a2ebfc04bacb679ddfddb930900'; // Spoonacular API Key
+  const apiKey = '1031d43d73ad4b3dac49be21461660f7'; // Spoonacular API Key
   const recipeId = '12346'; // Pasta with Garlic, Scallions, Cauliflower & Breadcrumbs
 
   useEffect(() => {
