@@ -12,7 +12,7 @@ function Ingredients({ recipeData }) {
   };
 
   return (
-    <div className='container mx-auto my-11'>
+    <div className='my-11'>
       <div className='flex flex-col items-center px-10 md:max-w-4xl space-y-4'>
         <img
           className='object-contain bg-customWhite w-96 rounded-sm'

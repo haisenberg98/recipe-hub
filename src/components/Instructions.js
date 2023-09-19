@@ -9,7 +9,7 @@ function InformationView({ instructionData, recipeData }) {
     return <div>Data not available.</div>;
   }
   return (
-    <div className='container mx-auto my-11'>
+    <div className='my-11'>
       {instructions.map(instruction => {
         return (
           <div className='flex flex-col px-10 mt-5 space-y-2 md:max-w-4xl'>
