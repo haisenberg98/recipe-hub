@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap');
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@layer base {
+  html {
+    @apply font-customPrimary;
+  }
+
+  h1,
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply font-bold text-primary;
+  }
+
+  p,
+  span {
+    @apply text-sm;
+    color: #888888;
+  }
+
+  button {
+    @apply bg-primary font-bold text-customBackground;
+  }
+}
+
+.active-tab {
+  @apply bg-customWhite text-primary;
+}
+
+/* Styles for big screens (e.g., desktop) */
+@media (min-width: 768px) {
+}
+
+/* Styles for mobile screens */
+@media (max-width: 767px) {
+}
