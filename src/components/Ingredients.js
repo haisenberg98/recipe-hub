@@ -7,8 +7,8 @@ function Ingredients({ recipeData }) {
   }
 
   const roundAmount = amount => {
-    if (amount <= 1) return 1;
-    return Math.round(amount);
+    if (amount <= 1) return 1; // if amount not reaching 1 then just say 1
+    return Math.round(amount); //return otherwise
   };
 
   return (

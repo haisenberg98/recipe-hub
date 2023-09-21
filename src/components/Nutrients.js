@@ -35,7 +35,7 @@ function Nutrients({ nutrientData }) {
           {sortedNutrients.map(item => (
             <div
               key={item.name}
-              className='flex flex-col p-4 bg-gray-100 rounded-md'
+              className='flex flex-col p-4 bg-gray-100 rounded-md break-words'
             >
               <span className={`'text-lg text-primary ${isBold(item.name)}`}>
                 {item.name}

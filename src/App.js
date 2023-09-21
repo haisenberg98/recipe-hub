@@ -55,7 +55,7 @@ function App() {
         <div className='flex'>
           {/* Tab buttons */}
           <button
-            className={`p-4 md:p-6 md:w-full rounded-tl-md ${
+            className={`p-4 md:p-6 w-full rounded-tl-md ${
               activeTab === 'tab1' ? 'active-tab' : ''
             }`}
             onClick={() => setActiveTab('tab1')}
@@ -63,7 +63,7 @@ function App() {
             Ingredients
           </button>
           <button
-            className={`p-4 md:p-6 md:w-full ${
+            className={`p-4 md:p-6 w-full ${
               activeTab === 'tab2' ? 'active-tab' : ''
             }`}
             onClick={() => setActiveTab('tab2')}
@@ -71,7 +71,7 @@ function App() {
             Instruction
           </button>
           <button
-            className={`p-4 md:p-6 md:w-full rounded-tr-md ${
+            className={`p-4 md:p-6 w-full rounded-tr-md ${
               activeTab === 'tab3' ? 'active-tab' : ''
             }`}
             onClick={() => setActiveTab('tab3')}
