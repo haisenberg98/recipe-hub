@@ -14,7 +14,7 @@ function App() {
   const [nutrientData, setNutrientData] = useState([]); // To store recipe data
   const [loading, setLoading] = useState(false); // To handle loading state
 
-  const apiKey = '1031d43d73ad4b3dac49be21461660f7'; // Spoonacular API Key
+  const apiKey = 'b375a697da494f2da2328f8924eb9e5c'; // Spoonacular API Key
   const recipeId = '12346'; // Pasta with Garlic, Scallions, Cauliflower & Breadcrumbs
 
   useEffect(() => {
@@ -51,11 +51,11 @@ function App() {
   // Main render logic
   return (
     <div className='flex justify-center items-center min-h-screen bg-customBackground p-6'>
-      <div className='flex flex-col bg-customWhite mx-6 rounded-md '>
+      <div className='flex flex-col bg-customWhite rounded-md '>
         <div className='flex'>
           {/* Tab buttons */}
           <button
-            className={`p-6 w-full rounded-tl-md ${
+            className={`p-4 md:p-6 md:w-full rounded-tl-md ${
               activeTab === 'tab1' ? 'active-tab' : ''
             }`}
             onClick={() => setActiveTab('tab1')}
@@ -63,13 +63,15 @@ function App() {
             Ingredients
           </button>
           <button
-            className={`p-6 w-full ${activeTab === 'tab2' ? 'active-tab' : ''}`}
+            className={`p-4 md:p-6 md:w-full ${
+              activeTab === 'tab2' ? 'active-tab' : ''
+            }`}
             onClick={() => setActiveTab('tab2')}
           >
             Instruction
           </button>
           <button
-            className={`p-6 w-full rounded-tr-md ${
+            className={`p-4 md:p-6 md:w-full rounded-tr-md ${
               activeTab === 'tab3' ? 'active-tab' : ''
             }`}
             onClick={() => setActiveTab('tab3')}

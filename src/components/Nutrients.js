@@ -60,7 +60,9 @@ function Nutrients({ nutrientData }) {
               key={property.name}
               className='flex flex-col p-4 bg-gray-100 rounded-md'
             >
-              <span className='text-lg font-medium'>{property.name}</span>
+              <span className='text-lg font-medium text-primary'>
+                {property.name}
+              </span>
               <span className='text-sm'>
                 {roundAndFormatNutrients(property.amount)} {property.unit}
               </span>
